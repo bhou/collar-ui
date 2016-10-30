@@ -1,0 +1,25 @@
+@import '../color';
+
+$stroke-width: 2px;
+
+@mixin node( $stroke-color, $fill-color: null ) {
+	stroke: $stroke-color;
+	stroke-width: $stroke-width;
+	@if $fill-color {
+		fill: $fill-color
+	}
+}
+
+@mixin edge ( $color, $style: null ) {
+	stroke: $color;
+	stroke-width: $stroke-width;
+}
+
+.node {
+	@include node( $color-primary, $color-bg );
+}
+
+.edge {
+	@include edge( $color-primary );
+}
+

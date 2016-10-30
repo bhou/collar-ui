@@ -1,0 +1,55 @@
+@import '../color';
+
+
+$img-border-width: 1px;
+
+@mixin img-primary-color-filter () {
+	-webkit-filter: grayscale(100%) hhue-rotate(119deg) saturate(91.5%) brightness(98%);
+	filter: brightness(50%) sepia(1) hue-rotate(119deg) saturate(91.5%) brightness(98%);
+}
+
+@mixin img-success-color-filter () {
+	-webkit-filter: grayscale(100%) hhue-rotate(119deg) saturate(91.5%) brightness(98%);
+	filter: brightness(50%) sepia(1) hue-rotate(119deg) saturate(91.5%) brightness(98%);
+}
+
+@mixin img-warning-color-filter () {
+	-webkit-filter: grayscale(100%) hue-rotate(4deg) saturate(170.5%) brightness(98%);
+	filter: brightness(50%) sepia(1) hue-rotate(4deg) saturate(170.5%) brightness(98%);
+}
+
+@mixin img-danger-color-filter () {
+	-webkit-filter: grayscale(100%) hue-rotate(-32deg) saturate(171.5%) brightness(99%);
+	filter: brightness(50%) sepia(1) hue-rotate(-32deg) saturate(171.5%) brightness(99%);
+}
+
+
+@mixin image( $color ) {
+	border: solid $img-border-width $color; 
+}
+
+img {
+	@include image( $color-primary );
+	@include img-primary-color-filter();
+}
+
+.img-primary {
+	@extend img;
+	@include image( $color-primary );	
+	@include img-primary-color-filter();
+}
+
+.img-warning {
+	@extend img;
+	@include image( $color-warning );	
+	@include img-warning-color-filter();
+}
+
+.img-danger {
+	@extend img;
+	@include image( $color-danger );	
+	@include img-danger-color-filter();
+}
+
+
+

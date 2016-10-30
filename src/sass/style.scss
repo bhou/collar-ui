@@ -1,0 +1,58 @@
+@import 'color';
+@import 'variable';
+
+body {
+	background-image: url('../img/bg-pattern.png');
+	background-repeat: repeat;
+	font-family: 'Julius Sans One', sans-serif;
+	color: $color-primary;
+}
+
+#container {
+	background: $bg-color;
+	height: 100%;
+	left: 0px;
+	opacity: 0.9;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
+/* elementary common style */
+.borderless {
+	border: solid 0px !important;
+}
+
+.vstack {
+	margin-top: 0 !important;
+}
+
+.vstack-first {
+	margin-top: 0 !important;
+}
+
+.vstack-last {
+	margin-top: 0 !important;
+	margin-bottom: $component-margin !important;
+}
+
+.hstack {
+	margin-left: 0 !important;
+}
+
+.hstack-first {
+	margin-left: 0 !important;
+}
+
+.hstack-last {
+	margin-left: 0 !important;
+	margin-right: $component-margin !important;
+}
+
+
+@import 'components/window';
+@import 'components/section';
+@import 'components/image';
+@import 'components/button';
+@import 'components/typography';
+@import 'components/graph';

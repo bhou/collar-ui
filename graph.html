@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>futuristic ui (demo)</title>
+		<meta name="author" content="Bo HOU">
+		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+		<link rel="stylesheet" href="public/css/style.css">
+	</head>
+	<body>
+		<div id="container">
+			<svg id="graph-example" style="position: fixed; left: 100px; top: 100px;" width="300" height="200">
+				<g id="edges">
+					<line class="edge" x1="150" y1="100" x2="200" y2="100"/>
+				</g>
+				<g id="nodes">	
+					<circle class="node" cx="150" cy="100" r="10"/>
+					<circle class="node" cx="200" cy="100" r="10" />
+					<rect class="node" x="10" y="10" width="100" height="100"/>
+				</g>
+				<g id="overlay">
+				</g>
+			</svg>
+		</div>
+	</body>
+	<script src='/public/js/snap.svg-min.js'></script>
+	<script src="/public/js/graph-example.js"></script>
+	<script src="/public/js/graph.js"></script>
+</html>

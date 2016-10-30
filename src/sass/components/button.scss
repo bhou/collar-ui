@@ -1,0 +1,44 @@
+@import '../color';
+
+$btn-border-width: 1px;
+$btn-margin: 2px;
+
+@mixin btn( $bg-color, $border-color ) {
+	background-color: $bg-color;
+	border: solid $btn-border-width $border-color;
+	box-shadow: 0px 0px 10px 0px $border-color;
+	color: $border-color;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: 900;
+	margin: $btn-margin;
+	padding-top: auto;
+	padding-bottom: auto;
+	text-align: center;
+
+	&:hover {
+		box-shadow: 0px 0px 20px 0px $border-color;
+		text-shadow: 0px 0px 20px $border-color;
+	}
+
+	&:active {
+		text-shadow: none;
+	}
+}
+
+.btn, .btn-primary {
+	@include btn( $bg-color, $color-primary);
+}
+
+.btn-success {
+	@include btn( $bg-color, $color-success );
+}
+
+.btn-warning {
+  @include btn( $bg-color, $color-warning );
+}
+
+.btn-danger {
+	@include btn( $bg-color, $color-danger );
+}
+

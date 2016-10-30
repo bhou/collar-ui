@@ -1,0 +1,68 @@
+@import '../color';
+
+@mixin typography($fg, $bg, $font: null, $font-size: null, $font-weight: null) {
+	background-color: $bg !important;
+	color: $fg !important;
+	@if $font {
+		font-family: $font !important;
+	}
+	@if $font-size {
+		font-size: $font-size !important;
+	}
+	@if $font-weight {
+		font-weight: $font-weight !important;
+	}
+	margin: 0 !important;
+}
+
+.title, .title-primary {
+	@include typography($color-primary, $color-bg, null, 24px, 900);
+}
+.title-success {
+	@include typography($color-success, $color-bg, null, 24px, 900);
+}
+.title-warning {
+	@include typography($color-warning, $color-bg, null, 24px, 900);
+}
+.title-danger {
+	@include typography($color-danger, $color-bg, null, 24px, 900);
+}
+
+.title-invert, .title-primary-invert {
+	@include typography($color-bg, $color-primary, null, 24px, 900);
+}
+.title-success-invert {
+	@include typography($color-bg, $color-success, null, 24px, 900);
+}
+.title-warning-invert {
+	@include typography($color-bg, $color-warning, null, 24px, 900);
+}
+.title-danger-invert {
+	@include typography($color-bg, $color-danger, null, 24px, 900);
+}
+
+.text, .text-primary {
+	@include typography($color-primary, $color-bg, null, 16px);
+}
+.text-success {
+	@include typography($color-success, $color-bg, null, 16px);
+}
+.text-warning {
+	@include typography($color-warning, $color-bg, null, 16px);
+}
+.text-danger {
+	@include typography($color-danger, $color-bg, null, 16px);
+}
+
+.text-invert .text-primary-invert {
+	@include typography($color-bg, $color-primary null, 16px);
+}
+.text-success-invert {
+	@include typography($color-bg, $color-success, null, 16px);
+}
+.text-warning-invert {
+	@include typography($color-bg, $color-warning, null, 16px);
+}
+.text-danger-invert {
+	@include typography($color-bg, $color-danger, null, 16px);
+}

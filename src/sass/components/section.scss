@@ -1,0 +1,96 @@
+@import '../color';
+
+$win-section-border-width: 1px;
+$win-section-margin: 2px;
+$win-section-content-padding: 5px;
+
+
+@mixin win-section( $color, $style: 'basic' ) {
+	border: solid $win-section-border-width $color;
+	margin: 2px;
+	text-align: center;
+	text-transform: uppercase;
+
+	@if $style == 'basic' {
+		background-color: $bg-color;
+		border-color: $color;
+		color: $color;
+	} @else if $style == 'invert' {
+		background-color: $color;
+		border-color: $color;
+		color: $bg-color;
+	} @else if $style == 'stripe' {
+		background: repeating-linear-gradient(
+			-45deg,
+			$bg-color,
+			$bg-color 10px,
+			$color 10px,
+			$color 20px
+		);
+		background-color: $bg-color;
+		color: $color;
+	}
+
+	& > .win-section-content {
+		display: inline-block;
+		@if $style == 'invert' {
+			background-color: $color;
+			color: $bg-color;
+		} @else {
+			background-color: $bg-color;
+			color: $color;
+		}
+		margin: $win-section-margin;
+		max-width: 80%;
+		padding: $win-section-content-padding;
+	}
+}
+
+.win-section, .win-section-primary {
+	@include win-section($color-primary, 'basic'); 
+}
+
+.win-section-primary-invert {
+	@include win-section($color-primary, 'invert'); 
+}
+
+.win-section-primary-stripe {
+	@include win-section($color-primary, 'stripe'); 
+}
+
+.win-section-success {
+	@include win-section($color-success, 'basic'); 
+}
+
+.win-section-success-invert {
+	@include win-section($color-success, 'invert'); 
+}
+
+.win-section-success-stripe {
+	@include win-section($color-success, 'stripe'); 
+}
+
+.win-section-warning {
+	@include win-section($color-warning, 'basic'); 
+}
+
+.win-section-warning-invert {
+	@include win-section($color-warning, 'invert'); 
+}
+
+.win-section-warning-stripe {
+	@include win-section($color-warning, 'stripe'); 
+}
+
+.win-section-danger {
+	@include win-section($color-danger, 'basic'); 
+}
+
+.win-section-danger-invert {
+	@include win-section($color-danger, 'invert'); 
+}
+
+.win-section-danger-stripe {
+	@include win-section($color-danger, 'stripe'); 
+}
+

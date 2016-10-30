@@ -1,0 +1,106 @@
+/* colors */
+/* basic colors */
+/* domain color */
+.title, .title-primary {
+  background-color: #282828 !important;
+  color: #83a598 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin: 0 !important; }
+
+.title-success {
+  background-color: #282828 !important;
+  color: #8ec07C !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin: 0 !important; }
+
+.title-warning {
+  background-color: #282828 !important;
+  color: #fabd2f !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin: 0 !important; }
+
+.title-danger {
+  background-color: #282828 !important;
+  color: #fb4934 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin: 0 !important; }
+
+.title-invert, .title-primary-invert {
+  background-color: #83a598 !important;
+  color: #282828 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin: 0 !important; }
+
+.title-success-invert {
+  background-color: #8ec07C !important;
+  color: #282828 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin: 0 !important; }
+
+.title-warning-invert {
+  background-color: #fabd2f !important;
+  color: #282828 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin: 0 !important; }
+
+.title-danger-invert {
+  background-color: #fb4934 !important;
+  color: #282828 !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  margin: 0 !important; }
+
+.text, .text-primary {
+  background-color: #282828 !important;
+  color: #83a598 !important;
+  font-size: 16px !important;
+  margin: 0 !important; }
+
+.text-success {
+  background-color: #282828 !important;
+  color: #8ec07C !important;
+  font-size: 16px !important;
+  margin: 0 !important; }
+
+.text-warning {
+  background-color: #282828 !important;
+  color: #fabd2f !important;
+  font-size: 16px !important;
+  margin: 0 !important; }
+
+.text-danger {
+  background-color: #282828 !important;
+  color: #fb4934 !important;
+  font-size: 16px !important;
+  margin: 0 !important; }
+
+.text-invert .text-primary-invert {
+  background-color: #83a598 !important;
+  color: #282828 !important;
+  font-family: 16px !important;
+  margin: 0 !important; }
+
+.text-success-invert {
+  background-color: #8ec07C !important;
+  color: #282828 !important;
+  font-size: 16px !important;
+  margin: 0 !important; }
+
+.text-warning-invert {
+  background-color: #fabd2f !important;
+  color: #282828 !important;
+  font-size: 16px !important;
+  margin: 0 !important; }
+
+.text-danger-invert {
+  background-color: #fb4934 !important;
+  color: #282828 !important;
+  font-size: 16px !important;
+  margin: 0 !important; }

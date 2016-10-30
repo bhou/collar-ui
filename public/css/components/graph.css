@@ -1,0 +1,11 @@
+/* colors */
+/* basic colors */
+/* domain color */
+.node {
+  stroke: #83a598;
+  stroke-width: 2px;
+  fill: #282828; }
+
+.edge {
+  stroke: #83a598;
+  stroke-width: 2px; }

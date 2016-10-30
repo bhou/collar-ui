@@ -1,0 +1,333 @@
+/* colors */
+/* basic colors */
+/* domain color */
+/**
+ * setup a window with color, font and font size
+ */
+.win, .win-primary {
+  background: #282828;
+  border: solid 1px #83a598;
+  opacity: 1;
+  position: fixed; }
+  .win > .win-content, .win-primary > .win-content {
+    float: left;
+    width: 100%;
+    height: 100%; }
+  .win > .win-tlo, .win-primary > .win-tlo {
+    border-bottom: solid 3px #83a598;
+    border-right: solid 3px #83a598;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -8px;
+    top: -8px; }
+  .win > .win-tlo:hover, .win-primary > .win-tlo:hover {
+    cursor: move; }
+  .win > .win-tli, .win-primary > .win-tli {
+    border-left: solid 3px #83a598;
+    border-top: solid 3px #83a598;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -2px;
+    top: -2px; }
+  .win > .win-tro, .win-primary > .win-tro {
+    border-bottom: solid 3px #83a598;
+    border-left: solid 3px #83a598;
+    height: 6px;
+    position: absolute;
+    right: -8px;
+    width: 6px;
+    top: -8px; }
+  .win > .win-tro:hover, .win-primary > .win-tro:hover {
+    cursor: move; }
+  .win > .win-tri, .win-primary > .win-tri {
+    border-right: solid 3px #83a598;
+    border-top: solid 3px #83a598;
+    height: 6px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    width: 6px; }
+  .win > .win-blo, .win-primary > .win-blo {
+    border-right: solid 3px #83a598;
+    border-top: solid 3px #83a598;
+    bottom: -8px;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -8px; }
+  .win > .win-blo:hover, .win-primary > .win-blo:hover {
+    cursor: move; }
+  .win > .win-bli, .win-primary > .win-bli {
+    border-bottom: solid 3px #83a598;
+    border-left: solid 3px #83a598;
+    bottom: -2px;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -2px; }
+  .win > .win-bro, .win-primary > .win-bro {
+    border-left: solid 3px #83a598;
+    border-top: solid 3px #83a598;
+    bottom: -8px;
+    height: 6px;
+    position: absolute;
+    right: -8px;
+    width: 6px; }
+  .win > .win-bro:hover, .win-primary > .win-bro:hover {
+    cursor: move; }
+  .win > .win-bri, .win-primary > .win-bri {
+    border-bottom: solid 3px #83a598;
+    border-right: solid 3px #83a598;
+    bottom: -2px;
+    height: 6px;
+    position: absolute;
+    right: -2px;
+    width: 6px; }
+
+.win-success {
+  background: #282828;
+  border: solid 1px #8ec07C;
+  opacity: 1;
+  position: fixed; }
+  .win-success > .win-content {
+    float: left;
+    width: 100%;
+    height: 100%; }
+  .win-success > .win-tlo {
+    border-bottom: solid 3px #8ec07C;
+    border-right: solid 3px #8ec07C;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -8px;
+    top: -8px; }
+  .win-success > .win-tlo:hover {
+    cursor: move; }
+  .win-success > .win-tli {
+    border-left: solid 3px #8ec07C;
+    border-top: solid 3px #8ec07C;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -2px;
+    top: -2px; }
+  .win-success > .win-tro {
+    border-bottom: solid 3px #8ec07C;
+    border-left: solid 3px #8ec07C;
+    height: 6px;
+    position: absolute;
+    right: -8px;
+    width: 6px;
+    top: -8px; }
+  .win-success > .win-tro:hover {
+    cursor: move; }
+  .win-success > .win-tri {
+    border-right: solid 3px #8ec07C;
+    border-top: solid 3px #8ec07C;
+    height: 6px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    width: 6px; }
+  .win-success > .win-blo {
+    border-right: solid 3px #8ec07C;
+    border-top: solid 3px #8ec07C;
+    bottom: -8px;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -8px; }
+  .win-success > .win-blo:hover {
+    cursor: move; }
+  .win-success > .win-bli {
+    border-bottom: solid 3px #8ec07C;
+    border-left: solid 3px #8ec07C;
+    bottom: -2px;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -2px; }
+  .win-success > .win-bro {
+    border-left: solid 3px #8ec07C;
+    border-top: solid 3px #8ec07C;
+    bottom: -8px;
+    height: 6px;
+    position: absolute;
+    right: -8px;
+    width: 6px; }
+  .win-success > .win-bro:hover {
+    cursor: move; }
+  .win-success > .win-bri {
+    border-bottom: solid 3px #8ec07C;
+    border-right: solid 3px #8ec07C;
+    bottom: -2px;
+    height: 6px;
+    position: absolute;
+    right: -2px;
+    width: 6px; }
+
+.win-warning {
+  background: #282828;
+  border: solid 1px #fabd2f;
+  opacity: 1;
+  position: fixed; }
+  .win-warning > .win-content {
+    float: left;
+    width: 100%;
+    height: 100%; }
+  .win-warning > .win-tlo {
+    border-bottom: solid 3px #fabd2f;
+    border-right: solid 3px #fabd2f;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -8px;
+    top: -8px; }
+  .win-warning > .win-tlo:hover {
+    cursor: move; }
+  .win-warning > .win-tli {
+    border-left: solid 3px #fabd2f;
+    border-top: solid 3px #fabd2f;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -2px;
+    top: -2px; }
+  .win-warning > .win-tro {
+    border-bottom: solid 3px #fabd2f;
+    border-left: solid 3px #fabd2f;
+    height: 6px;
+    position: absolute;
+    right: -8px;
+    width: 6px;
+    top: -8px; }
+  .win-warning > .win-tro:hover {
+    cursor: move; }
+  .win-warning > .win-tri {
+    border-right: solid 3px #fabd2f;
+    border-top: solid 3px #fabd2f;
+    height: 6px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    width: 6px; }
+  .win-warning > .win-blo {
+    border-right: solid 3px #fabd2f;
+    border-top: solid 3px #fabd2f;
+    bottom: -8px;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -8px; }
+  .win-warning > .win-blo:hover {
+    cursor: move; }
+  .win-warning > .win-bli {
+    border-bottom: solid 3px #fabd2f;
+    border-left: solid 3px #fabd2f;
+    bottom: -2px;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -2px; }
+  .win-warning > .win-bro {
+    border-left: solid 3px #fabd2f;
+    border-top: solid 3px #fabd2f;
+    bottom: -8px;
+    height: 6px;
+    position: absolute;
+    right: -8px;
+    width: 6px; }
+  .win-warning > .win-bro:hover {
+    cursor: move; }
+  .win-warning > .win-bri {
+    border-bottom: solid 3px #fabd2f;
+    border-right: solid 3px #fabd2f;
+    bottom: -2px;
+    height: 6px;
+    position: absolute;
+    right: -2px;
+    width: 6px; }
+
+.win-danger {
+  background: #282828;
+  border: solid 1px #fb4934;
+  opacity: 1;
+  position: fixed; }
+  .win-danger > .win-content {
+    float: left;
+    width: 100%;
+    height: 100%; }
+  .win-danger > .win-tlo {
+    border-bottom: solid 3px #fb4934;
+    border-right: solid 3px #fb4934;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -8px;
+    top: -8px; }
+  .win-danger > .win-tlo:hover {
+    cursor: move; }
+  .win-danger > .win-tli {
+    border-left: solid 3px #fb4934;
+    border-top: solid 3px #fb4934;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -2px;
+    top: -2px; }
+  .win-danger > .win-tro {
+    border-bottom: solid 3px #fb4934;
+    border-left: solid 3px #fb4934;
+    height: 6px;
+    position: absolute;
+    right: -8px;
+    width: 6px;
+    top: -8px; }
+  .win-danger > .win-tro:hover {
+    cursor: move; }
+  .win-danger > .win-tri {
+    border-right: solid 3px #fb4934;
+    border-top: solid 3px #fb4934;
+    height: 6px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    width: 6px; }
+  .win-danger > .win-blo {
+    border-right: solid 3px #fb4934;
+    border-top: solid 3px #fb4934;
+    bottom: -8px;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -8px; }
+  .win-danger > .win-blo:hover {
+    cursor: move; }
+  .win-danger > .win-bli {
+    border-bottom: solid 3px #fb4934;
+    border-left: solid 3px #fb4934;
+    bottom: -2px;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    left: -2px; }
+  .win-danger > .win-bro {
+    border-left: solid 3px #fb4934;
+    border-top: solid 3px #fb4934;
+    bottom: -8px;
+    height: 6px;
+    position: absolute;
+    right: -8px;
+    width: 6px; }
+  .win-danger > .win-bro:hover {
+    cursor: move; }
+  .win-danger > .win-bri {
+    border-bottom: solid 3px #fb4934;
+    border-right: solid 3px #fb4934;
+    bottom: -2px;
+    height: 6px;
+    position: absolute;
+    right: -2px;
+    width: 6px; }

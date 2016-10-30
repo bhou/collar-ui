@@ -1,0 +1,142 @@
+@import '../color';
+
+$win-border-width: 1px;
+$corner-size: 6px;
+$corner-border-width: 3px;
+$border-offset: ($win-border-width + $corner-border-width) / 2;
+
+
+
+/**
+ * setup a window with color, font and font size
+ */
+@mixin window( $color, $font: null, $font-size: null ) {
+	background: $bg-color;
+	border: solid $win-border-width $color;	
+	@if ($font) {
+	  font-family: $font;
+	}
+	@if ($font-size) {
+		font-size: $font-size;
+	}
+	opacity: 1;
+	position: fixed;
+
+	& > .win-content {
+		float: left;
+		width: 100%;
+		height: 100%;
+	}
+
+	& > .win-tlo {
+		border-bottom: solid $corner-border-width $color; 
+		border-right: solid $corner-border-width $color; 
+		height: $corner-size;
+		position: absolute;
+		width: $corner-size;
+		left: -($corner-size + $border-offset);
+		top: -($corner-size + $border-offset);
+	}
+
+	& > .win-tlo:hover {
+		cursor: move;
+	}
+
+	& > .win-tli {
+		border-left: solid $corner-border-width $color; 
+		border-top: solid $corner-border-width $color; 
+		height: $corner-size;
+		position: absolute;
+		width: $corner-size;
+		left: -$border-offset;
+		top: -$border-offset;
+	}
+
+	& > .win-tro {
+		border-bottom: solid $corner-border-width $color; 
+		border-left: solid $corner-border-width $color; 
+		height: $corner-size;
+		position: absolute;
+		right: -($corner-size + $border-offset);
+		width: $corner-size;
+		top: -($corner-size + $border-offset);
+	}
+
+	& > .win-tro:hover {
+		cursor: move;
+	}
+
+	& > .win-tri {
+		border-right: solid $corner-border-width $color; 
+		border-top: solid $corner-border-width $color; 
+		height: $corner-size;
+		position: absolute;
+		right: -$border-offset;
+		top: -$border-offset;
+		width: $corner-size;
+	}
+
+	& > .win-blo {
+		border-right: solid $corner-border-width $color; 
+		border-top: solid $corner-border-width $color; 
+		bottom: -($corner-size + $border-offset);
+		height: $corner-size;
+		position: absolute;
+		width: $corner-size;
+		left: -($corner-size + $border-offset);
+	}
+
+	& > .win-blo:hover {
+		cursor: move;
+	}
+
+	& > .win-bli {
+		border-bottom: solid $corner-border-width $color; 
+		border-left: solid $corner-border-width $color; 
+		bottom: -$border-offset;
+		height: $corner-size;
+		position: absolute;
+		width: $corner-size;
+		left: -$border-offset;
+	}
+
+	& > .win-bro {
+		border-left: solid $corner-border-width $color; 
+		border-top: solid $corner-border-width $color; 
+		bottom: -($corner-size + $border-offset);
+		height: $corner-size;
+		position: absolute;
+		right: -($corner-size + $border-offset);
+		width: $corner-size;
+	}
+
+	& > .win-bro:hover {
+		cursor: move;
+	}
+
+	& > .win-bri {
+		border-bottom: solid $corner-border-width $color; 
+		border-right: solid $corner-border-width $color; 
+		bottom: -$border-offset;
+		height: $corner-size;
+		position: absolute;
+		right: -$border-offset;
+		width: $corner-size;
+	}
+}
+
+.win, .win-primary {
+  @include window($color-primary);
+}
+
+.win-success {
+	@include window($color-success);
+}
+
+.win-warning {
+	@include window($color-warning);
+}
+
+.win-danger {
+	@include window($color-danger);
+}

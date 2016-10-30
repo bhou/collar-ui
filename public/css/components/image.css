@@ -1,0 +1,22 @@
+/* colors */
+/* basic colors */
+/* domain color */
+img, .img-primary, .img-warning, .img-danger {
+  border: solid 1px #83a598;
+  -webkit-filter: grayscale(100%) hhue-rotate(119deg) saturate(91.5%) brightness(98%);
+  filter: brightness(50%) sepia(1) hue-rotate(119deg) saturate(91.5%) brightness(98%); }
+
+.img-primary {
+  border: solid 1px #83a598;
+  -webkit-filter: grayscale(100%) hhue-rotate(119deg) saturate(91.5%) brightness(98%);
+  filter: brightness(50%) sepia(1) hue-rotate(119deg) saturate(91.5%) brightness(98%); }
+
+.img-warning {
+  border: solid 1px #fabd2f;
+  -webkit-filter: grayscale(100%) hue-rotate(4deg) saturate(170.5%) brightness(98%);
+  filter: brightness(50%) sepia(1) hue-rotate(4deg) saturate(170.5%) brightness(98%); }
+
+.img-danger {
+  border: solid 1px #fb4934;
+  -webkit-filter: grayscale(100%) hue-rotate(-32deg) saturate(171.5%) brightness(99%);
+  filter: brightness(50%) sepia(1) hue-rotate(-32deg) saturate(171.5%) brightness(99%); }
